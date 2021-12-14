@@ -3,4 +3,8 @@ public struct MyPackageDemo {
 
     public init() {
     }
+    
+    func log() {
+        print(text)
+    }
 }
