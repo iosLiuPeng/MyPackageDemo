@@ -4,7 +4,7 @@ public struct MyPackageDemo {
     public init() {
     }
     
-    func log() {
+    public func log() {
         print(text)
     }
 }

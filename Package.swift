@@ -10,6 +10,8 @@ let package = Package(
         .library(
             name: "MyPackageDemo",
             targets: ["MyPackageDemo"]),
+        .library(name: "TargetOne", targets: ["MyPackageDemo", "TargetOne"]),
+        .library(name: "TargetTwo", targets: ["MyPackageDemo", "TargetTwo"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-algorithms.git", .upToNextMajor(from: "1.0.0")),
@@ -33,6 +35,8 @@ let package = Package(
         .target(
             name: "MyPackageDemo",
             dependencies: []),
+        .target(name: "TargetOne"),
+        .target(name: "TargetTwo"),
         .testTarget(
             name: "MyPackageDemoTests",
             dependencies: ["MyPackageDemo"]),

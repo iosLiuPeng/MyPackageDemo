@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Foo {
+public struct TargetOne {
     public func log() {
-        print("im foo!")
+        print("im TargetOne!")
     }
 }
