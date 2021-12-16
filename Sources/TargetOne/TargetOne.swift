@@ -6,9 +6,19 @@
 //
 
 import Foundation
+import ComplexModule
+import Numerics
+import RealModule
 
 public struct TargetOne {
+    public init () {
+        
+    }
+    
     public func log() {
         print("im TargetOne!")
+        
+        print(Numerics.Augmented.self)
+        print(RealModule.Augmented.self)
     }
 }
